@@ -1,0 +1,8 @@
+@mixin bp($point) {
+  @if $point == mobile {
+    @media(max-width: 768px) { @content; }
+  }
+  @else if $point == pc {
+    @media(min-width: 768px) { @content; }
+  }
+}
