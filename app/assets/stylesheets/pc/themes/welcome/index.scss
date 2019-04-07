@@ -1,1 +1,46 @@
-@import 'loader';
+@import "pc/loader";
+
+#title {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 10px;
+  position: fixed;
+  top: 170px;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  -webkit-transform : translateX(-50%);
+  transform : translateX(-50%);
+}
+
+.contents {
+  padding-top: 360px;
+}
+
+
+.top-page {
+
+  .basic-info {
+
+    padding-top: 250px;
+
+    .name {
+      font-size: 45px;
+      letter-spacing: 5px;
+    }
+    .job-description {
+      font-size: 18px;
+    }
+  }
+
+  .animated-text {
+    padding-top: 20px;
+    #typed {
+      font-size: 50px;
+      color: rgba(0,0,0,0.2);
+    }
+    .typed-cursor {
+      font-size: 50px;
+      color: rgba(0,0,0,0.2);
+    }
+  }
+}

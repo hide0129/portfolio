@@ -1,0 +1,7 @@
+<div class="nested-fields well well-compact">
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, class: "post-image" %>
+    <%= link_to_remove_association "remove image", f %>
+  </div>
+</div>

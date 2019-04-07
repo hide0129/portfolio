@@ -1,0 +1,6 @@
+<% data = set_title_description %>
+
+<title><%= data.try(:first) %></title>
+<meta property="og:title"  content="<%= data.try(:first) %>" />
+<meta name="description" content="<%= data.try(:second) %>" />
+<meta property="og:description"  content="<%= data.try(:second) %>" />

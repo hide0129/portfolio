@@ -1,0 +1,19 @@
+<div>
+  <%= link_to '新規作成', admin_works_path, method: :post, class: 'btn btn-primary' %>
+</div>
+
+<table class='table table-striped table-hover table-condensed'>
+  <thead>
+    <tr>
+      <th>クライアント</th>
+      <th>コンテント</th>
+      <th>スキル</th>
+      <th>URL</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render @works %>
+  </tbody>
+</table>

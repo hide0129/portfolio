@@ -1,2 +1,29 @@
-<h1>hello world</h1>
-<p>design is how it works</p>
+<div class='top-page'>
+  <div class='basic-info'>
+    <h1 class="name">HIDEAKI TAKAHASHI</h1>
+    <p class="job-description">UI・UX Designer/Engineer<p>
+  </div>
+  <div class='animated-text'>
+    <div class="box">
+      <span id="typed" style="white-space:pre"></span>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+<script>
+  var typed = new Typed('#typed', {
+    strings: ['Hello, World!!', '"Design is \nhow it works."', '"Designing a product is \ndesigning a relationship."', '"Simplicity is \nthe ultimate sophistication."', "Why don't you \ndesign your world with me?"],
+    typeSpeed: 40,
+    startDelay: 500,
+    backSpeed: 40,
+    smartBackspace: true,
+    backDelay: 3000,
+    showCursor: true,
+    cursorChar: '|',
+    autoInsertCss: true,
+    contentType: 'html',
+  });
+
+</script>

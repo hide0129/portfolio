@@ -1,0 +1,50 @@
+@import "pc/loader";
+
+.works {
+  .work-section {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 100px;
+
+    .work-link {
+      color: black;
+    }
+    .work-link:hover {
+      text-decoration: none;
+    }
+
+    .eyecatch {
+      width: 100%;
+    }
+    .content {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      line-height: 25px;
+    }
+    .client-title, .skill-title {
+      letter-spacing: 5px;
+      margin-top: 25px;
+      font-size: 13px;
+    }
+    .client, .skill {
+    }.url-title {
+      letter-spacing: 5px;
+      margin-top: 25px;
+      font-size: 13px;
+      text-align: center;
+    }
+    .url {
+      display: block;
+      text-align: center;
+      color: black;
+      font-size: 13px;
+      text-decoration: underline;
+    }
+    .url:hover {
+      text-decoration: none;
+    }
+  }
+
+
+}

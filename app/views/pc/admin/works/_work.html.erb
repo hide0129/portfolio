@@ -1,0 +1,7 @@
+<tr>
+  <td><%= work.client %></td>
+  <td><%= work.content %></td>
+  <td><%= work.skill %></td>
+  <td><%= work.try(:url) %></td>
+  <td><%= link_to '編集', edit_admin_work_path(work.id), class: 'btn btn-primary' %></td>
+</tr>

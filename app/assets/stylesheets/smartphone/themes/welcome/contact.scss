@@ -1,0 +1,29 @@
+@import "pc/loader";
+
+.contact {
+  text-align: center;
+
+  .facebook {
+    padding-top: 100px;
+
+    .messenger-icon {
+      height: 100px;
+    }
+    .messenger {
+      font-size: 13px;
+      letter-spacing: 2px;
+      padding-top: 10px;
+      color: rgba(0,0,0,0.3);
+    }
+  }
+
+  .mail {
+    display: inline-block;
+    padding-top: 60px;
+    color: rgba(0,0,0,0.3);
+    text-decoration: underline;
+  }
+  .mail:hover {
+    text-decoration: none;
+  }
+}

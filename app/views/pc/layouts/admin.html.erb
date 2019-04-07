@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <%= csrf_meta_tags %>
+
+  <%= render 'layouts/common' %>
+  <%= stylesheet_link_tag    'pc/application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'pc/application', 'data-turbolinks-track' => true %>
+</head>
+<body>
+  <%= render 'shared/admin_header' %>
+  <div id="admin-container" class='container'>
+    <%= yield %>
+  </div>
+</body>
+</html>

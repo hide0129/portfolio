@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Portfolio</title>
     <%= csrf_meta_tags %>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <%= render 'layouts/common' %>
     <%= stylesheet_link_tag    'smartphone/application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'smartphone/application', 'data-turbolinks-track' => true %>
+    <%= render 'application/favicon' %>
   </head>
 
   <body>
-    <div id='wrapper' class="container">
-      <div class="row">
-        <%= yield %>
-      </div>
+    <%= render 'shared/menu' %>
+    <%= render 'shared/header' %>
+    <div id='wrapper'>
+      <%= yield %>
     </div>
   </body>
 </html>

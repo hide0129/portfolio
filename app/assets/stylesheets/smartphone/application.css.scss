@@ -12,7 +12,7 @@
  *
  *= require material_icons
  *= require normalize-rails
- *= require_tree ../smartphone
+ *= require_tree .
  *= require_self
  */
 
@@ -21,3 +21,19 @@
   @import "font-awesome-sprockets";
   @import "font-awesome";
   @import "loader";
+
+body {
+  font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+#wrapper {
+  margin-left: 16px;
+  margin-right: 16px;
+  max-width: 780px;
+  position: static;
+  z-index: 1;
+}
+
+#admin-container {
+  margin-top: 60px;
+}

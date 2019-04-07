@@ -1,0 +1,32 @@
+<div class='works'>
+
+  <h1 id="title">WORKS</h1>
+
+  <div class="contents">
+
+    <% if @works.present? %>
+      <% @works.each do |w| %>
+        <div class='work-section'>
+          <%= link_to work_path(w.id), class: "work-link" do %>
+
+            <%= image_tag(w.images.first.image, class: 'eyecatch') %>
+            <p class='content'><%= w.content %></p>
+            <h4 class='client-title'>CLIENT</h4>
+            <p class='client'><%= w.client %></p>
+            <h4 class='skill-title'>SKILL</h4>
+            <p class='skill'><%= w.skill %></p>
+
+          <% end %>
+
+          <% if w.url.present? %>
+            <h4 class='url-title'>URL</h4>
+            <%= link_to w.url, w.url, class: 'url' %>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+
+    <%= will_paginate @works %>
+
+  </div>
+</div>

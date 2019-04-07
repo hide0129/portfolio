@@ -13,5 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require typed
+//= require cocoon
 
 //= require_tree ../pc

@@ -1,0 +1,36 @@
+<%= form_for @work, url: path, method: method, class: 'form-standard' do |f| %>
+  <div class='field'>
+    <%= f.label :client, 'クライアント' %>
+    <%= f.text_field :client, class: 'form-control', id:'client'  %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :content, 'コンテント' %>
+    <%= f.text_field :content, class: 'form-control', id:'content'  %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :skill, 'スキル' %>
+    <%= f.text_field :skill, class: 'form-control', id:'skill'  %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :url, 'URL' %>
+    <%= f.text_field :url, class: 'form-control', id:'url'  %>
+  </div>
+
+  <div id='images'>
+    <%= f.fields_for :images, @work.images.build do |fi| %>
+      <%= render 'image_fields', f: fi %>
+    <% end %>
+
+    <div id="links">
+      <%= link_to_add_association 'add image',f, :images %>
+    </div>
+  </div>
+
+  <div class='field'>
+    <%= f.submit "保存する", class: 'btn btn-primary' %>
+    <%= link_to '削除', "/admin/works/#{@work.id}", method: :delete, class: 'btn btn-danger', style: 'float: right', data: {confirm: '本当に削除しますか？'} %>
+  </div>
+<% end %>

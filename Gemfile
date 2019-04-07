@@ -21,6 +21,10 @@ gem 'will_paginate-bootstrap'
 gem 'bootstrap-will_paginate'
 gem 'material_icons'
 
+gem 'carrierwave'
+gem 'cocoon'
+gem 'rails_real_favicon'
+
 gem 'capistrano', '~> 3.9.0'
 gem 'capistrano-rbenv'
 gem 'capistrano-rails'
