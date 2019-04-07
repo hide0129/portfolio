@@ -4,7 +4,7 @@ lock '3.9.1'
 set :application, 'portfolio'
 set :repo_url, 'git@github.com:hide0129/portfolio.git'
 set :user, 'root'
-set :password, "hyde0129lec"
+set :password, "D9TwCPXGtw62i_r"
 set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 
 set :log_level, :debug
