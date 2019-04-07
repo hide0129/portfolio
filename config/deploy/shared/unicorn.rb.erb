@@ -7,6 +7,10 @@ listen "/tmp/unicorn.<%= fetch(:application) %>.sock"
 worker_processes 2
 timeout 60
 
+before_exec do |server|
+  ENV['BUNDLE_GEMFILE'] = "#{current_path}/Gemfile"
+end
+
 before_fork do |server, worker|
   if defined?(ActiveRecord::Base)
     ActiveRecord::Base.connection.disconnect!
