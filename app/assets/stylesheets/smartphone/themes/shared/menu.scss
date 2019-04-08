@@ -105,7 +105,13 @@ $bar3-top: $bar2-top * 2;
     opacity: 0;
 
     ul {
+        padding: 0;
         list-style: none;
+
+        li {
+            text-align: center;
+            padding: 20px 0;
+        }
     }
 
     a {
@@ -161,5 +167,5 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10vh;
+    font-size: 6vh;
 }
