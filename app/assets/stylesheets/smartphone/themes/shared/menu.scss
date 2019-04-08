@@ -87,7 +87,7 @@ $bar3-top: $bar2-top * 2;
 }
 
 #nav-overlay.open {
-    opacity: 0.85;
+    opacity: 0.95;
     transform: scale3d(1, 1, 1);
 }
 
@@ -111,6 +111,7 @@ $bar3-top: $bar2-top * 2;
         li {
             text-align: center;
             padding: 20px 0;
+            letter-spacing: 5px;
         }
     }
 
