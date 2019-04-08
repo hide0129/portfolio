@@ -10,7 +10,7 @@ set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 set :log_level, :debug
 
 set :rbenv_type, :user # :system or :user
-set :rbenv_ruby, '2.4.3'
+set :rbenv_ruby, '2.4.0'
 
 set :linked_dirs, %w{log}
 
