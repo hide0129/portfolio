@@ -20,13 +20,13 @@ $(window).scroll(function(){
 
       scroll = window.pageYOffset;
 
-      if (scroll < 60) {
+      if (scroll < 40) {
         if (opacity != 1) {
           title.style.opacity = 1
           opacity = 1
         }
-      } else if (scroll < 90) {
-        opacityNow = 1-(scroll-60)/30
+      } else if (scroll < 70) {
+        opacityNow = 1-(scroll-40)/30
         title.style.opacity = opacityNow
         opacity = opacityNow
       } else {

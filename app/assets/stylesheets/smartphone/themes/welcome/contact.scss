@@ -4,13 +4,13 @@
   text-align: center;
 
   .facebook {
-    padding-top: 100px;
+    padding-top: 30px;
 
     .messenger-icon {
-      height: 100px;
+      height: 60px;
     }
     .messenger {
-      font-size: 13px;
+      font-size: 12px;
       letter-spacing: 2px;
       padding-top: 10px;
       color: rgba(0,0,0,0.3);
@@ -18,8 +18,9 @@
   }
 
   .mail {
+    font-size: 12px;
     display: inline-block;
-    padding-top: 60px;
+    padding-top: 30px;
     color: rgba(0,0,0,0.3);
     text-decoration: underline;
   }
