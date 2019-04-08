@@ -18,10 +18,14 @@
 
 
 .top-page {
+  position: fixed;
+  top: 50%;
+  -ms-transform: translateY(-120px);
+  -webkit-transform : translateY(-120px);
+  transform : translateY(-120px);
 
   .basic-info {
 
-    padding-top: 250px;
 
     .name {
       font-size: 45px;

@@ -2,10 +2,10 @@
 
 #title {
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 10px;
   position: fixed;
-  top: 170px;
+  top: 110px;
   left: 50%;
   -ms-transform: translateX(-50%);
   -webkit-transform : translateX(-50%);
@@ -13,33 +13,36 @@
 }
 
 .contents {
-  padding-top: 360px;
+  padding-top: 220px;
 }
 
 
 .top-page {
+  position: fixed;
+  top: 50%;
+  -ms-transform: translateY(-100px);
+  -webkit-transform : translateY(-100px);
+  transform : translateY(-100px);
 
   .basic-info {
 
-    padding-top: 250px;
-
     .name {
-      font-size: 45px;
+      font-size: 30px;
       letter-spacing: 5px;
     }
     .job-description {
-      font-size: 18px;
+      font-size: 15px;
     }
   }
 
   .animated-text {
-    padding-top: 20px;
+    padding-top: 15px;
     #typed {
-      font-size: 50px;
+      font-size: 25px;
       color: rgba(0,0,0,0.2);
     }
     .typed-cursor {
-      font-size: 50px;
+      font-size: 25px;
       color: rgba(0,0,0,0.2);
     }
   }

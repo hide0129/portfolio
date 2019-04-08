@@ -27,8 +27,9 @@ body {
 }
 
 #wrapper {
-  margin-left: 16px;
-  margin-right: 16px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
   max-width: 780px;
   position: static;
   z-index: 1;
